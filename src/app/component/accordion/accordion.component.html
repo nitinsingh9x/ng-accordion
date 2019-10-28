@@ -1,0 +1,8 @@
+<div>
+    <div class="collapsible-content" *ngIf="isHidden" [@inOutAnimation]>
+        <ng-content></ng-content>
+    </div>
+    <div class="expandable-btn">
+        <button type="button" (click)="isHidden = !isHidden">Collapse</button>
+    </div>
+</div>
